@@ -10,6 +10,7 @@ For more detail, please refer to
 
 # Layout
 
+```
 ├── os
 │   ├── pseL4-core
 │   ├── kernel
@@ -28,6 +29,7 @@ For more detail, please refer to
 │   ├── sh
 │   └─- python
 └── psel4-tool
+```
 
 # Quickstart
 
