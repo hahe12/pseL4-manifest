@@ -23,10 +23,7 @@
   <project name="seL4.git" path="os/kernel" remote="seL4" revision="a961f9e46caf4f1cf83acfdc60637ad9e9cc5e0d" upstream="master" dest-branch="master"/>
   <project name="seL4_libs.git" path="os/projects/seL4_libs" remote="seL4" revision="d8ae2c44e92d1bf19891344eb038752565f0b30e" upstream="master" dest-branch="master"/>
   <project name="seL4_projects_libs.git" path="os/projects/seL4_projects_libs" remote="seL4" revision="eee72e93a1f5f9310cc3c76da8e084dea83b06eb" upstream="master" dest-branch="master"/>
-  <project name="seL4_tools.git" path="os/tools/seL4" remote="seL4" revision="5fee50c854d2af42cfffeb744c4d2bf6447e183c" upstream="master" dest-branch="master">
-    <linkfile src="README.md" dest="os/README.md"/>
-    <linkfile src="init.py" dest="os/init"/>
-  </project>
+  <project name="seL4_tools.git" path="os/tools/seL4" remote="seL4" revision="5fee50c854d2af42cfffeb744c4d2bf6447e183c" upstream="master" dest-branch="master"/>
   <project name="sel4runtime" path="os/projects/sel4runtime" remote="seL4" revision="d935dd05da0cf959e9fd0140af913dc6fdaa0221" upstream="master" dest-branch="master"/>
   <project name="util_libs.git" path="os/projects/util_libs" remote="seL4" revision="b0cedde66a6b5a3ef1bc072f9a08a4e6bd68935c" upstream="master" dest-branch="master"/>
   
