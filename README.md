@@ -35,10 +35,16 @@ For more detail, please refer to
 
 ## Setup environment
 
+### Install host tool
+git clone https://github.com/pseL4/pseL4-host.git
+cd pseL4-host
+source env.sh
+
+### Initilize pseL4 repo
 ```
 mkdir pseL4
 cd pseL4 
-repo init -u https://github.com/hahe12/pseL4.git
+repo init -u https://github.com/pseL4/pseL4-manifest.git
 repo sync 
 ```
 
@@ -65,6 +71,37 @@ cd build-x86 .
 ```
 
 ### Graphic (VSC)
+
+* Install vscode and cpptools plugin
+* Create debugger lanuch file
+*
 ```
 Create a lanuch.txt file
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "seL4 debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/hello-world_build/kernel/kernel.elf",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "debuggerConfiguration": "gdb",
+            "miDebuggerPath":"/usr/bin/gdb-multiarch",
+            "miDebuggerServerAddress": "localhost:1234",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
 ```
+
