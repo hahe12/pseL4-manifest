@@ -36,9 +36,12 @@ For more detail, please refer to
 ## Setup environment
 
 ### Install host tool
+
+```
 git clone https://github.com/pseL4/pseL4-host.git
 cd pseL4-host
 source env.sh
+```
 
 ### Initilize pseL4 repo
 ```
