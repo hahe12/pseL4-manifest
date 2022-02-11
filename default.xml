@@ -28,8 +28,6 @@
   <!-- pseL4 project -->
   
   <!-- seL4 tools -->
-  <project name="seL4_tools.git" path="tools/seL4" remote="seL4" revision="5fee50c854d2af42cfffeb744c4d2bf6447e183c" upstream="master" dest-branch="master">
-    <linkfile src="cmake-tool/init-build.sh" dest="init-build.sh"/>
-  </project>
+  <project name="seL4_tools.git" path="tools/seL4" remote="seL4" revision="5fee50c854d2af42cfffeb744c4d2bf6447e183c" upstream="master" dest-branch="master"/>
   
 </manifest>
