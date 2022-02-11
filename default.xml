@@ -13,9 +13,7 @@
   <project name="seL4.git" path="kernel" remote="seL4" revision="a961f9e46caf4f1cf83acfdc60637ad9e9cc5e0d" upstream="master" dest-branch="master"/>
   
   <!-- seL4 project -->
-  <project name="camkes-tool.git" path="projects/camkes-tool" remote="seL4" revision="bceec3634b2c107c3b8136d2128b0ad94f1accac" upstream="master" dest-branch="master">
-    <linkfile src="docs/index.md" dest="README-camkes.md"/>
-  </project>
+  <project name="camkes-tool.git" path="projects/camkes-tool" remote="seL4" revision="bceec3634b2c107c3b8136d2128b0ad94f1accac" upstream="master" dest-branch="master"/>
   <project name="camkes-vm-linux.git" path="projects/camkes-vm-linux" remote="seL4" revision="3eafe89fffc3decb385c1ec74c2d744a09b6327e" upstream="master" dest-branch="master"/>
   <project name="camkes-vm.git" path="projects/camkes-vm" remote="seL4" revision="d8b4b5b983850c7ba953e815cbc83dd6f8b04f80" upstream="master" dest-branch="master"/>
   <project name="capdl.git" path="projects/capdl" remote="seL4" revision="234063c8e46b78ce70d1057fc9a3a2165850f791" upstream="master" dest-branch="master"/>
@@ -32,7 +30,6 @@
   <!-- seL4 tools -->
   <project name="seL4_tools.git" path="tools/seL4" remote="seL4" revision="5fee50c854d2af42cfffeb744c4d2bf6447e183c" upstream="master" dest-branch="master">
     <linkfile src="cmake-tool/init-build.sh" dest="init-build.sh"/>
-    <linkfile src="cmake-tool/griddle" dest="griddle"/>
   </project>
   
 </manifest>
