@@ -8,7 +8,6 @@
   <remote name="pseL4" fetch="." />
   
   <default remote="seL4" revision="master"/>
-  <default remote="pseL4" revision="main"/>
   
   <!-- seL4 -->
   <project name="camkes-tool.git" path="os/projects/camkes-tool" remote="seL4" revision="bceec3634b2c107c3b8136d2128b0ad94f1accac" upstream="master" dest-branch="master">
