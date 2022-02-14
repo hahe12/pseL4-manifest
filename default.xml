@@ -27,7 +27,7 @@
   
   <!-- pseL4 project -->
   <project name="pseL4_sys.git" path="projects/pseL4_sys" remote="pseL4" revision="main">
-    <linkfile src="projects/pseL4_sys/init-build.sh" dest="init-build.sh"/>
+    <linkfile src="init-build.sh" dest="init-build.sh"/>
   </project>
    
   <!-- seL4 tools -->
