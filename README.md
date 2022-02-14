@@ -5,106 +5,34 @@ This repo is a collection of pseL4 system developing envirment, it could generat
 This dev also should generated SDK for user development, the SDK is very similar with Linux application development envionment, it provide C/C++ compiler, and 3pp build system could make use it directly, such as autotools, cmake and so on.
 
 For more detail, please refer to 
-* https://github.com/pseL4/pseL4-core 
-* https://github.com/seL4/seL4
+* https://github.com/pseL4/pseL4
 
 # Layout
 
 ```
-├── os
-│   ├── pseL4-core
-│   ├── kernel
-│   ├── projects
-│   └── tools
+.
+├── build
+├── host
+├── init-build.sh -> projects/pseL4_sys/init-build.sh
+├── kernel
+├── projects
+│   ├── camkes-tool
+│   ├── camkes-vm
+│   ├── camkes-vm-linux
+│   ├── capdl
+│   ├── global-components
+│   ├── musllibc
+│   ├── projects_libs
+│   ├── pseL4_sys
+│   ├── seL4_libs
+│   ├── seL4_projects_libs
+│   ├── sel4runtime
+│   └── util_libs
 ├── README.md
-├── init -> psel4-tool/init.py
-├── user
-│   ├── pseL4-mnt
-│   ├── pseL4-dev
-│   ├── pseL4-drv
-│   ├── pseL4-net
-│   ├── pseL4-sem
-│   └─- pseL4-c
-├── 3pp
-│   ├── sh
-│   └─- python
-└── psel4-tool
+├── setup.sh
+├── tools
+│   └── seL4
+└── tree.txt
 ```
 
-# Quickstart
-
-## Setup environment
-
-### Install host tool
-
-```
-git clone https://github.com/pseL4/pseL4-host.git
-cd pseL4-host
-source env.sh
-```
-
-### Initilize pseL4 repo
-```
-mkdir pseL4
-cd pseL4 
-repo init -u https://github.com/pseL4/pseL4-manifest.git
-repo sync 
-```
-
-## Build (x86)
-
-```
-mkdir build-x86 
-cd build-x86 .
-./init-build.sh -DPLATFORM=x86_64 -DSIMULATION=TRUE ninja 
-```
-
-## Run
-```
-./simulate
-```
-
-## Debug
-
-### Command line:
-
-```
-./simulate -d
-./launch_gdb (in a seperate Window)
-```
-
-### Graphic (VSC)
-
-* Install vscode and cpptools plugin
-* Create debugger lanuch file
-*
-```
-Create a lanuch.txt file
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "seL4 debug",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/hello-world_build/kernel/kernel.elf",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "debuggerConfiguration": "gdb",
-            "miDebuggerPath":"/usr/bin/gdb-multiarch",
-            "miDebuggerServerAddress": "localhost:1234",
-            "setupCommands": [
-                {
-                    "description": "为 gdb 启用整齐打印",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ]
-        }
-    ]
-}
-```
 
