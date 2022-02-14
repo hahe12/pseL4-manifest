@@ -26,7 +26,7 @@
   <project name="util_libs.git" path="projects/util_libs" remote="seL4" revision="b0cedde66a6b5a3ef1bc072f9a08a4e6bd68935c" upstream="master" dest-branch="master"/>
   
   <!-- pseL4 project -->
-  <project name="pseL4_sys.git" path="projects/pseL4_sys" upstream="main" dest-branch="main" remote="pseL4">
+  <project name="pseL4_sys.git" path="projects/pseL4_sys"  remote=pseL4" revision="main">
     <linkfile src="projects/pseL4_sys/init-build.sh" dest="init-build.sh"/>
   </project>
    
