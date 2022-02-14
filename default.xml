@@ -26,7 +26,8 @@
   <project name="util_libs.git" path="projects/util_libs" remote="seL4" revision="b0cedde66a6b5a3ef1bc072f9a08a4e6bd68935c" upstream="master" dest-branch="master"/>
   
   <!-- pseL4 project -->
-  
+  <project name="pseL4_sys.git" path="projects/pseL4_sys" upstream="main" dest-branch="main" remote="pseL4"/>
+   
   <!-- seL4 tools -->
   <project name="seL4_tools.git" path="tools/seL4" remote="seL4" revision="5fee50c854d2af42cfffeb744c4d2bf6447e183c" upstream="master" dest-branch="master"/>
   
