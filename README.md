@@ -30,9 +30,8 @@ For more detail, please refer to
 │   └── util_libs
 ├── README.md
 ├── setup.sh
-├── tools
-│   └── seL4
-└── tree.txt
+└── tools
+    └── seL4
 ```
 
 
