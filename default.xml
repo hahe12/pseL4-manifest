@@ -24,13 +24,16 @@
   <project name="seL4_projects_libs.git" path="projects/seL4_projects_libs" remote="seL4" revision="eee72e93a1f5f9310cc3c76da8e084dea83b06eb" upstream="master" dest-branch="master"/>
   <project name="sel4runtime" path="projects/sel4runtime" remote="seL4" revision="d935dd05da0cf959e9fd0140af913dc6fdaa0221" upstream="master" dest-branch="master"/>
   <project name="util_libs.git" path="projects/util_libs" remote="seL4" revision="b0cedde66a6b5a3ef1bc072f9a08a4e6bd68935c" upstream="master" dest-branch="master"/>
-  
-  <!-- pseL4 project -->
-  <project name="pseL4_sys.git" path="projects/pseL4_sys" remote="pseL4" revision="main">
-    <linkfile src="init-build.sh" dest="init-build.sh"/>
+
+  <!-- seL4 tools -->
+  <project name="seL4_tools.git" path="tools/seL4" remote="seL4" revision="5fee50c854d2af42cfffeb744c4d2bf6447e183c" upstream="master" dest-branch="master">
+    <linkfile src="cmake-tool/init-build.sh" dest="init-build.sh"/>
+    <linkfile src="cmake-tool/griddle" dest="griddle"/>
   </project>
    
-  <!-- seL4 tools -->
-  <project name="seL4_tools.git" path="tools/seL4" remote="seL4" revision="5fee50c854d2af42cfffeb744c4d2bf6447e183c" upstream="master" dest-branch="master"/>
+  <!-- pseL4 project -->
+  <project name="pseL4_sys.git" path="projects/pseL4_sys" remote="pseL4" revision="main">
+    <linkfile src="easy-settings.cmake" dest="easy-settings.cmake"/>
+  </project>
   
 </manifest>
